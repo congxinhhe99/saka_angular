@@ -1,0 +1,23 @@
+version: '3.0'
+
+services:
+    webtool-customer:
+        # image: ngapham0705/webtool-customer:latest
+        image: webtool-customer
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: webtool-customer
+        networks:
+            - webtool-network
+        ports:
+            - 4200:4200
+
+volumes:
+    webtool-volume:
+        name: webtool-customer-volume
+
+networks:
+  webtool-network:
+    external: true
+    name: webtool-network

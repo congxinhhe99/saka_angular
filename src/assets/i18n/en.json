@@ -1,0 +1,9 @@
+{
+    "loginPage": {
+        "email": "Email",
+        "password": "Password",
+        "forgotPassword": "Forgot password",
+        "emailPlaceholder": "Email",
+        "passwordPlaceholder": "Password"
+    }
+}
